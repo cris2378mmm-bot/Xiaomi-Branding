@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Branding de Xiaomi: identidad visual, propuesta de valor, ecosistema tecnológico y experiencia del cliente.">
+<title>Xiaomi | Tecnología para una vida más inteligente</title>
+<style>
+:root{--orange:#ff6900;--ink:#171717;--muted:#686868;--paper:#f6f6f4;--line:#e8e8e5;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+header{height:76px;background:#fff;display:flex;align-items:center;position:sticky;top:0;z-index:10;border-bottom:1px solid #eee}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:1.4px}
+.mi{width:39px;height:39px;background:var(--orange);color:#fff;border-radius:11px;display:grid;place-items:center;font-size:21px;font-weight:900;letter-spacing:-2px}
+nav{display:flex;gap:25px;font-size:13px;color:#444}nav a:hover{color:var(--orange)}.pill{background:var(--ink);color:white;padding:11px 17px;border-radius:30px;font-size:12px;font-weight:700}
+.hero{background:#111;color:white;overflow:hidden;position:relative;min-height:560px;display:flex;align-items:center}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.87),rgba(0,0,0,.25)),url('https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?auto=format&fit=crop&w=1900&q=85') center/cover;opacity:.9}
+.hero-inner{position:relative;z-index:1;padding:88px 0;max-width:650px}.eyebrow{color:var(--orange);font-size:12px;letter-spacing:2.4px;font-weight:800;text-transform:uppercase}
+h1{font-size:clamp(43px,7vw,78px);line-height:.99;letter-spacing:-3.8px;margin:18px 0 22px}.hero p{font-size:17px;color:#e4e4e4;max-width:540px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:14px 21px;border-radius:30px;font-weight:750;font-size:13px}.btn.orange{background:var(--orange);color:white}.btn.ghost{border:1px solid #aaa;color:white}
+section{padding:86px 0}.section-head{max-width:690px;margin-bottom:38px}.section-head h2{font-size:clamp(30px,4vw,47px);line-height:1.08;letter-spacing:-1.7px;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-42px;position:relative;z-index:2}.stat{background:white;border-radius:17px;padding:23px;box-shadow:0 10px 35px #0000000b}.stat strong{display:block;font-size:25px;letter-spacing:-1px}.stat span{font-size:12px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.photo{width:100%;height:420px;object-fit:cover;border-radius:22px;display:block}.copy h3{font-size:28px;line-height:1.15;margin:0 0 14px;letter-spacing:-.8px}.copy p{color:var(--muted)}.tag{display:inline-block;background:#fff0e7;color:#d95600;padding:7px 12px;border-radius:30px;font-size:11px;font-weight:800;margin:4px 5px 4px 0}
+.soft{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--paper);border-radius:18px;padding:24px;min-height:210px}.card .num{font-size:12px;color:var(--orange);font-weight:900;letter-spacing:1px}.card h3{font-size:19px;margin:13px 0 8px}.card p{font-size:13px;color:var(--muted);margin:0}
+.identity{display:grid;grid-template-columns:1fr 1fr;gap:18px}.identity-box{border-radius:22px;padding:34px;min-height:250px;background:#fff}.identity-box.orange{background:var(--orange);color:#fff}.identity-box h3{font-size:23px;margin:0 0 12px}.logo-demo{display:flex;align-items:center;gap:14px;margin-top:28px}.logo-demo .mi{width:70px;height:70px;border-radius:18px;font-size:39px}.logo-demo span:last-child{font-weight:900;letter-spacing:3px;font-size:22px}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{background:#fff;border-radius:18px;overflow:hidden}.product img{width:100%;height:185px;object-fit:cover;display:block}.product div{padding:17px}.product h3{font-size:15px;margin:0 0 5px}.product p{font-size:12px;color:var(--muted);margin:0}
+.compare{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}.compare th,.compare td{text-align:left;padding:17px;border-bottom:1px solid var(--line);font-size:13px}.compare th{background:#171717;color:#fff}.compare td:first-child{font-weight:800}
+.metric{background:#151515;color:#fff;border-radius:23px;padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.metric p{color:#c8c8c8}.formula{background:#272727;border:1px solid #414141;border-radius:15px;padding:20px;font-size:14px;color:#fff}.formula b{color:#ff8b43}
+.calculator{background:#fff;border-radius:16px;padding:22px;margin-top:16px;color:var(--ink)}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fields label{font-size:12px;color:var(--muted)}input{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin-top:6px;font:inherit}.result{margin-top:13px;font-size:24px;font-weight:850;color:var(--orange)}
+.improve{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:center}.improve img{width:100%;height:350px;object-fit:cover;border-radius:22px}.check{list-style:none;padding:0}.check li{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.check li:before{content:"✓";color:var(--orange);font-weight:900;margin-right:10px}
+footer{background:#111;color:white;padding:45px 0}.foot{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.foot p{color:#aaa;font-size:12px;max-width:520px}.foot a{color:#ff9a5d;font-size:12px}
+.note{font-size:11px;color:#888;margin-top:22px}
+
+.buy-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}
+.price{font-weight:850;font-size:14px}
+.add-cart{background:var(--orange);border:0;color:#fff;border-radius:22px;padding:9px 12px;font-size:11px;font-weight:800;cursor:pointer}
+.cart-panel{position:fixed;right:18px;top:88px;width:min(390px,calc(100vw - 36px));max-height:75vh;overflow:auto;background:#fff;border:1px solid #e8e8e5;border-radius:18px;box-shadow:0 18px 60px #0003;z-index:30;padding:20px;display:none}
+.cart-panel.open{display:block}.cart-head{display:flex;align-items:center;justify-content:space-between}
+.cart-close{border:0;background:#f1f1ef;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:18px}
+.cart-item{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}
+.cart-item small{display:block;color:var(--muted);margin-top:3px}
+.qty-controls{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.qty-controls button{border:0;background:#f1f1ef;border-radius:8px;padding:5px 9px;cursor:pointer}
+.cart-total{display:flex;justify-content:space-between;font-weight:850;padding:17px 0;font-size:17px}
+.cart-action{width:100%;border:0;background:var(--orange);color:white;border-radius:25px;padding:13px;font-weight:800;cursor:pointer}
+.cart-empty{color:var(--muted);font-size:13px;padding:18px 0}
+.cart-note{font-size:10px;color:#888;margin-top:10px}
+@media(max-width:800px){nav{display:none}.grid2,.identity,.metric,.improve{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.product-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}.hero{min-height:520px}.photo{height:300px}.metric{padding:24px}}
+@media(max-width:480px){.cards,.product-grid{grid-template-columns:1fr}.wrap{width:min(100% - 30px,1160px)}section{padding:62px 0}h1{letter-spacing:-2px}.hero-inner{padding:70px 0}.fields{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="mi">mi</span><span>XIAOMI</span></a>
+<nav><a href="#marca">La marca</a><a href="#identidad">Identidad</a><a href="#ecosistema">Ecosistema</a><a href="#confianza">Confianza</a><a href="#mejora">Propuesta</a></nav>
+<button class="pill" id="cartOpen" type="button" style="border:0;cursor:pointer">🛒 Carrito <span id="cartCount">0</span></button>
+</div></header>
+<aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras">
+<div class="cart-head"><h3>Tu carrito</h3><button class="cart-close" id="cartClose" aria-label="Cerrar carrito">×</button></div>
+<div id="cartItems" class="cart-empty">Todavía no agregas productos.</div>
+<div class="cart-total"><span>Total estimado</span><span id="cartTotal">$0 MXN</span></div>
+<button class="cart-action" id="checkoutBtn" type="button">Finalizar pedido</button>
+<p class="cart-note">Demostración académica: productos y precios ilustrativos. No procesa pagos ni realiza compras reales.</p>
+</aside>
+<main>
+<section class="hero" id="inicio"><div class="wrap"><div class="hero-inner">
+<div class="eyebrow">Branding · Tecnología · Experiencia</div>
+<h1>La innovación<br>en tu día a día.</h1>
+<p>Xiaomi conecta tecnología, diseño y funcionalidad para acercar experiencias inteligentes a más personas.</p>
+<div class="actions"><a class="btn orange" href="#ecosistema">Conoce el ecosistema</a><a class="btn ghost" href="#identidad">Descubre su identidad</a></div>
+</div></div></section>
+<div class="wrap stats">
+<div class="stat"><strong>Innovación</strong><span>Funciones y experiencias tecnológicas</span></div>
+<div class="stat"><strong>Conectividad</strong><span>Dispositivos que trabajan en conjunto</span></div>
+<div class="stat"><strong>Opciones</strong><span>Alternativas para distintas necesidades y presupuestos</span></div>
+</div>
+<section id="marca"><div class="wrap grid2">
+<div class="copy"><div class="eyebrow">01 · Descripción de la empresa</div><h2 style="font-size:clamp(32px,4vw,48px);line-height:1.06;letter-spacing:-1.7px">Tecnología que acompaña cada momento.</h2>
+<p>Xiaomi es una empresa de tecnología que ofrece celulares, tablets, relojes inteligentes, audífonos, televisores, electrodomésticos y productos para el hogar inteligente. También comercializa sus productos mediante su tienda oficial en línea.</p>
+<p>Su propuesta busca integrar distintos dispositivos en un ecosistema conectado y facilitar actividades cotidianas a través de soluciones prácticas.</p>
+<div><span class="tag">Tecnología</span><span class="tag">Diseño moderno</span><span class="tag">Hogar inteligente</span><span class="tag">Conectividad</span></div></div>
+<img class="photo" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1100&q=85" alt="Teléfono inteligente en primer plano">
+</div></section>
+<section class="soft" id="publico"><div class="wrap"><div class="section-head"><div class="eyebrow">02 · Público objetivo</div><h2>Diseñada para personas conectadas.</h2><p>Xiaomi se dirige a consumidores que valoran la tecnología, la funcionalidad y la posibilidad de elegir entre diferentes opciones de precio.</p></div>
+<div class="cards">
+<div class="card"><div class="num">01 / JÓVENES Y ESTUDIANTES</div><h3>Siempre conectados</h3><p>Buscan dispositivos útiles para estudiar, comunicarse, crear contenido y entretenerse.</p></div>
+<div class="card"><div class="num">02 / FAMILIAS</div><h3>Soluciones para el hogar</h3><p>Se interesan por productos prácticos que aporten comodidad, seguridad y conectividad.</p></div>
+<div class="card"><div class="num">03 / ENTUSIASTAS TECH</div><h3>Curiosidad e innovación</h3><p>Comparan especificaciones, funciones y compatibilidad entre dispositivos.</p></div>
+</div></div></section>
+<section id="identidad"><div class="wrap"><div class="section-head"><div class="eyebrow">03 · Identidad visual y personalidad</div><h2>Una identidad simple, reconocible y actual.</h2><p>El naranja es el color distintivo de Xiaomi. Se combina con blanco, negro y tonos neutros para mantener una comunicación visual clara.</p></div>
+<div class="identity">
+<div class="identity-box"><h3>Identidad visual</h3><p>Logotipo MI, formas sencillas, composición limpia y fotografías de producto que destacan el diseño y las funciones.</p><div class="logo-demo"><span class="mi">mi</span><span>XIAOMI</span></div></div>
+<div class="identity-box orange"><h3>Personalidad de marca</h3><p>Si Xiaomi fuera una persona, sería moderna, innovadora, práctica y tecnológica. Comunicaría con claridad y buscaría soluciones útiles para la vida diaria.</p><p><b>Innovadora · Accesible · Práctica · Conectada</b></p></div>
+</div></div></section>
+<section class="soft" id="ecosistema"><div class="wrap"><div class="section-head"><div class="eyebrow">04 · Propuesta de valor</div><h2>Mucho más que un celular.</h2><p>Xiaomi ofrece productos tecnológicos con múltiples funciones y diferentes alternativas de precio. Su ecosistema permite conectar dispositivos para crear experiencias integradas.</p></div>
+<div class="product-grid">
+<div class="product"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=80" alt="Smartphone"><div><h3>Smartphones</h3><p>Comunicación, fotografía y productividad.</p><div class="buy-row"><span class="price">$5,999 MXN</span><button class="add-cart" data-id="phone" data-name="Smartphone Xiaomi" data-price="5999">Agregar</button></div></div></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=700&q=80" alt="Reloj inteligente"><div><h3>Wearables</h3><p>Funciones inteligentes en movimiento.</p><div class="buy-row"><span class="price">$1,499 MXN</span><button class="add-cart" data-id="watch" data-name="Reloj inteligente" data-price="1499">Agregar</button></div></div></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1505666287802-931dc83948e9?auto=format&fit=crop&w=700&q=80" alt="Audífonos"><div><h3>Audio</h3><p>Experiencias para escuchar y comunicarte.</p><div class="buy-row"><span class="price">$899 MXN</span><button class="add-cart" data-id="audio" data-name="Audífonos Xiaomi" data-price="899">Agregar</button></div></div></div>
+<div class="product"><img src="https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=700&q=80" alt="Dispositivos para hogar inteligente"><div><h3>Hogar inteligente</h3><p>Conectividad y comodidad en casa.</p><div class="buy-row"><span class="price">$1,199 MXN</span><button class="add-cart" data-id="home" data-name="Dispositivo para hogar inteligente" data-price="1199">Agregar</button></div></div></div>
+</div>
+<div style="margin-top:36px"><h3 style="font-size:22px">Diferenciación frente a Samsung</h3><p style="color:var(--muted);font-size:13px">Ambas marcas ofrecen una amplia variedad de dispositivos. La comparación resume el enfoque descrito en este proyecto.</p>
+<table class="compare"><thead><tr><th>Aspecto</th><th>Xiaomi</th><th>Samsung</th></tr></thead><tbody>
+<tr><td>Oferta</td><td>Dispositivos móviles y amplio ecosistema para el hogar.</td><td>Amplio catálogo de productos y servicios tecnológicos.</td></tr>
+<tr><td>Enfoque destacado</td><td>Integración de dispositivos y variedad de alternativas de precio.</td><td>Variedad de categorías y servicios propios.</td></tr>
+<tr><td>Propuesta</td><td>Tecnología funcional con precios competitivos.</td><td>Experiencias tecnológicas dentro de su propio ecosistema.</td></tr>
+</tbody></table></div></div></section>
+<section id="confianza"><div class="wrap"><div class="section-head"><div class="eyebrow">05 · Comunicación y experiencia</div><h2>La confianza también forma parte del producto.</h2><p>Xiaomi utiliza su sitio web, redes sociales y publicidad digital para presentar novedades, funciones, promociones y beneficios de sus productos.</p></div>
+<div class="grid2">
+<img class="photo" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1100&q=85" alt="Experiencia de compra en línea">
+<div class="copy"><h3>Una experiencia clara antes y después de comprar.</h3><p>La información sobre garantías, soporte técnico, reparaciones, envíos y devoluciones ayuda a resolver dudas y fortalecer la confianza del consumidor.</p><p>Un posible riesgo para la experiencia es que los pedidos lleguen después del plazo prometido. Medir los retrasos permite identificar oportunidades de mejora.</p></div>
+</div></div></section>
+<section style="background:#f1f1ef"><div class="wrap"><div class="metric">
+<div><div class="eyebrow">06 · Reflexión desde Actuaría</div><h2 style="font-size:35px;line-height:1.1;margin:10px 0">Medir para mejorar.</h2><p>El porcentaje de pedidos entregados fuera de plazo permite conocer qué proporción de las entregas no cumple el tiempo prometido. Se puede analizar semanal o mensualmente para observar cambios.</p>
+<div class="formula"><b>Indicador =</b> (Pedidos entregados fuera de plazo ÷ Total de pedidos) × 100</div></div>
+<div class="calculator"><h3 style="margin:0 0 12px">Calculadora del indicador</h3><p style="font-size:12px;color:#777;margin-top:0">Introduce datos de ejemplo o datos reales de un periodo.</p>
+<div class="fields"><label>Pedidos fuera de plazo<input id="late" type="number" min="0" value="8"></label><label>Total de pedidos<input id="total" type="number" min="1" value="100"></label></div>
+<div class="result" id="result">8.0%</div><div id="feedback" style="font-size:12px;color:#777">Porcentaje calculado con los valores ingresados.</div></div>
+</div></div></section>
+<section id="mejora"><div class="wrap improve">
+<div><div class="eyebrow">07 · Propuesta de mejora</div><h2 style="font-size:clamp(32px,4vw,46px);line-height:1.06;letter-spacing:-1.5px">Hacer la información importante más visible.</h2><p style="color:var(--muted)">Una mejora sería mostrar de forma sencilla y visible las condiciones de compra desde la página de cada producto, para que el cliente pueda tomar una decisión con mayor seguridad.</p>
+<ul class="check"><li>Plazos estimados de entrega antes de pagar.</li><li>Resumen de garantía y condiciones de devolución.</li><li>Acceso directo a soporte técnico y reparaciones.</li><li>Seguimiento claro del pedido.</li></ul></div>
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1100&q=85" alt="Persona realizando una compra digital">
+</div></section>
+<section class="soft"><div class="wrap"><div class="section-head"><div class="eyebrow">Conclusión</div><h2>Una marca construida alrededor de la conexión.</h2><p>Xiaomi construye su marca combinando tecnología, diseño, precios competitivos y un ecosistema de productos conectados. Su tienda en línea y sus servicios de garantía, devolución y reparación también forman parte de la experiencia. Desde Actuaría, los indicadores ayudan a medir situaciones que pueden afectar la confianza del cliente y detectar oportunidades de mejora.</p></div>
+<div class="card"><h3>Fuentes de consulta</h3><p><a href="https://www.mi.com/global/about/" target="_blank" rel="noopener">Xiaomi · About Xiaomi</a>　|　<a href="https://www.mi.com/mx/product-list/" target="_blank" rel="noopener">Productos Xiaomi México</a>　|　<a href="https://www.mi.com/mx/store/" target="_blank" rel="noopener">Tienda Xiaomi México</a>　|　<a href="https://www.mi.com/mx/support/" target="_blank" rel="noopener">Soporte Xiaomi México</a>　|　<a href="https://www.mi.com/mx/support/warranty/" target="_blank" rel="noopener">Garantía Xiaomi México</a></p></div>
+<p class="note">Proyecto académico de branding. Las fotografías son imágenes ilustrativas de tecnología y comercio digital; no representan necesariamente productos oficiales Xiaomi. El logotipo tipográfico es una representación visual para este diseño.</p>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div class="brand"><span class="mi">mi</span><span>XIAOMI</span></div><div><b>Tecnología para una vida más inteligente.</b><p>Presentación de identidad de marca, propuesta de valor, experiencia del cliente y medición de indicadores.</p></div><a href="#inicio">Volver arriba ↑</a></div></footer>
+<script>
+const late=document.getElementById('late'),total=document.getElementById('total'),result=document.getElementById('result'),feedback=document.getElementById('feedback');
+function calc(){const a=Number(late.value),b=Number(total.value);if(b<=0||a<0||a>b){result.textContent='—';feedback.textContent='Revisa los datos: el total debe ser mayor que cero y los pedidos fuera de plazo no pueden superar el total.';return}result.textContent=(a/b*100).toFixed(1)+'%';feedback.textContent=a+' de '+b+' pedidos se entregaron fuera del plazo prometido.'}
+late.addEventListener('input',calc);total.addEventListener('input',calc);
+
+// Carrito de compras de demostración
+const cart = {};
+const panel = document.getElementById('cartPanel');
+const cartItems = document.getElementById('cartItems');
+const cartCount = document.getElementById('cartCount');
+const cartTotal = document.getElementById('cartTotal');
+function money(value){return value.toLocaleString('es-MX',{style:'currency',currency:'MXN',maximumFractionDigits:0})}
+function renderCart(){
+  const entries=Object.values(cart);
+  const count=entries.reduce((sum,item)=>sum+item.qty,0);
+  const totalPrice=entries.reduce((sum,item)=>sum+item.price*item.qty,0);
+  cartCount.textContent=count;
+  cartTotal.textContent=money(totalPrice)+' MXN';
+  if(!entries.length){cartItems.className='cart-empty';cartItems.textContent='Todavía no agregas productos.';return}
+  cartItems.className='';
+  cartItems.innerHTML=entries.map(item=>`<div class="cart-item"><div><b>${item.name}</b><small>${money(item.price)} MXN c/u</small></div><div class="qty-controls"><button type="button" data-action="minus" data-id="${item.id}">−</button><b>${item.qty}</b><button type="button" data-action="plus" data-id="${item.id}">+</button></div></div>`).join('');
+}
+document.querySelectorAll('.add-cart').forEach(button=>button.addEventListener('click',()=>{
+  const id=button.dataset.id;
+  if(!cart[id])cart[id]={id,name:button.dataset.name,price:Number(button.dataset.price),qty:0};
+  cart[id].qty++;renderCart();panel.classList.add('open');
+}));
+document.getElementById('cartOpen').addEventListener('click',()=>panel.classList.toggle('open'));
+document.getElementById('cartClose').addEventListener('click',()=>panel.classList.remove('open'));
+cartItems.addEventListener('click',event=>{
+  const button=event.target.closest('button[data-action]');if(!button)return;
+  const item=cart[button.dataset.id];if(!item)return;
+  if(button.dataset.action==='plus')item.qty++;else item.qty--;
+  if(item.qty<=0)delete cart[item.id];renderCart();
+});
+document.getElementById('checkoutBtn').addEventListener('click',()=>{
+  const entries=Object.values(cart);
+  if(!entries.length){alert('Agrega al menos un producto al carrito.');return}
+  const summary=entries.map(item=>`${item.name} x${item.qty} — ${money(item.price*item.qty)} MXN`).join('\n');
+  alert('Resumen de pedido de demostración:\n\n'+summary+'\n\nTotal: '+cartTotal.textContent+'\n\nEsta página es una muestra escolar y no procesa pagos reales.');
+});
+renderCart();
+
+</script>
+</body>
+</html>
